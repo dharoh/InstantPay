@@ -1,0 +1,183 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView_Details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rohandhamecha.instantpay.MerchantDetailsFragment">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_Details"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_bussinessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="BUSINESS NAME"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/editText_bussinessName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:textSize="22dp"
+            android:inputType="text"
+            android:text=""
+            android:hint="My Company"
+            android:backgroundTint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView_contactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="CONTACT NUMBER"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/editText_contactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="none"
+            android:text="8141682201"
+            android:textColor="@android:color/black"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textView_merchantCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="MERCHANT CATEGORY"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textView_merchantAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="MERCHANT ADDRESS"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/editText_merchantAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:textSize="22dp"
+            android:inputType="text"
+            android:text=""
+            android:hint="My Company Address"
+            android:backgroundTint="@android:color/darker_gray" />
+
+        <!--<TextView
+            android:id="@+id/textView_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="LINKED BANK ACCOUNT"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/editText_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:textSize="22dp"
+            android:inputType="text"
+            android:text=""
+            android:backgroundTint="@android:color/darker_gray" />-->
+
+        <TextView
+            android:id="@+id/textView_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="STATE"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Spinner
+            android:id="@+id/spinner_state"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textView_pincode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="PINCODE"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/editText_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:textSize="22dp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:text=""
+            android:hint="Pincode"
+            android:backgroundTint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/button_proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="25dp"
+            android:text="Proceed"
+            android:onClick="getValue" />
+    </LinearLayout>
+
+</ScrollView>

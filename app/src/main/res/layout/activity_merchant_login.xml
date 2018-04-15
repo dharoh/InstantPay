@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rohandhamecha.instantpay.MerchantVerifyActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_MerchantLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView_backlogin"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="9dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView_MerchantLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:text="Merchant Login"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="31dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_LoginDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout_MerchantLoginTitle">
+
+        <TextView
+            android:id="@+id/textView_merchantID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="MERCHANT ID"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_merchantID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="Enter Merchant ID"
+            android:inputType="number"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textView_merchantLoginPIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="MERCHANT PIN"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_merchantLoginPIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:ems="10"
+            android:hint="Enter Merchant PIN"
+            android:inputType="number|numberPassword"
+            android:maxLength="4"
+            android:textSize="22dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

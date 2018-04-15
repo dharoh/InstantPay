@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/pic2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/upi" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Enter Last 6 digit of Debit card number"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <EditText
+        android:id="@+id/su1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/su2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/su1"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/su3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/su2"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/su4"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/su3"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/su5"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/su4"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/su6"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/su5"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Expiry Date(mm/yyyy)"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/su1" />
+
+    <EditText
+        android:id="@+id/su7"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/su8"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/su7"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:text="/"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/su8"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/su9"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/su10"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="47dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/su9"
+        app:layout_constraintTop_toBottomOf="@+id/su4" />
+
+    <EditText
+        android:id="@+id/su11"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/su10"
+        app:layout_constraintTop_toBottomOf="@+id/su5" />
+
+    <EditText
+        android:id="@+id/su12"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/su11"
+        app:layout_constraintTop_toBottomOf="@+id/su6" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:onClick="prss1"
+        android:text="1"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/su7" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="12dp"
+        android:onClick="prss2"
+        android:text="2"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/su10" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="12dp"
+        android:onClick="prss3"
+        android:text="3"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/su11" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:onClick="prss4"
+        android:text="4"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="16dp"
+        android:onClick="prss5"
+        android:text="5"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="16dp"
+        android:onClick="prss6"
+        android:text="6"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:onClick="prss7"
+        android:text="7"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="18dp"
+        android:onClick="prss8"
+        android:text="8"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="18dp"
+        android:onClick="prss9"
+        android:text="9"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:onClick="backpace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:srcCompat="@mipmap/backspace" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="16dp"
+        android:onClick="prss0"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="16dp"
+        android:onClick="nxt"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:srcCompat="@mipmap/ok" />
+
+</android.support.constraint.ConstraintLayout>

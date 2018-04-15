@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Change SIM"
+        android:id="@+id/csim"></item>
+
+  <item android:title="Chnage Email ID"
+      android:id="@+id/cmail"></item>
+
+    <item android:title="Merchant Login"
+        android:id="@+id/mlogin"></item>
+
+    <item android:title="Generate QR Code"
+        android:id="@+id/gqc"></item>
+
+    <item android:title="Raise Complaint"
+        android:id="@+id/complaint"></item>
+
+    <item android:title="About us"
+        android:id="@+id/us"></item>
+
+
+    <item android:title="Log Out"
+        android:id="@+id/logout"></item>
+</menu>

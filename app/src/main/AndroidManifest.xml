@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rohandhamecha.instantpay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FirstPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SendMoneyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".mailjava" />
+        <activity android:name=".sim_display" />
+        <activity android:name=".mailotp" />
+<activity android:name=".app_pin"></activity>
+        <activity android:name=".banklist"></activity>
+        <activity android:name=".verify_bank"></activity>
+        <activity android:name=".displayqr"></activity>
+        <activity android:name=".scanqr"
+            android:screenOrientation="portrait"
+            ></activity>
+<activity android:name=".upi6digit"></activity>
+        <activity android:name=".upi4digit"></activity>
+        <activity android:name=".set_upi"></activity>
+        <activity android:name=".bankaccount"></activity>
+        <activity android:name=".enteramount"></activity>
+        <activity android:name=".sucesstransaction"></activity>
+        <activity android:name=".trans_java"></activity>
+        <activity android:name=".MerchantDetailsActivity"
+            android:theme="@style/AppThemeNoTitle"
+            >
+
+        </activity>
+
+        <activity android:name=".About_us"
+            android:theme="@style/AppThemeNoTitle" />
+
+        <activity android:name=".RaiseComplaint"
+            android:theme="@style/AppThemeNoTitle" />
+
+        <activity
+            android:name=".MerchantMainActivity"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".MerchantVerifyActivity"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".MerchantLoginActivity"
+            android:theme="@style/AppThemeNoTitle"></activity>
+
+        <activity android:name=".requestmoney"></activity>
+        <activity android:name=".notification_java"></activity>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

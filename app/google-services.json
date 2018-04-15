@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "979457738856",
+    "firebase_url": "https://instantpay-97f1d.firebaseio.com",
+    "project_id": "instantpay-97f1d",
+    "storage_bucket": "instantpay-97f1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979457738856:android:895e9667fba84d1d",
+        "android_client_info": {
+          "package_name": "com.example.rohandhamecha.instantpay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979457738856-t8rogsvmieu7k1pg86rj3tcthnmkrocn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC90QnbLgbX0TC2bFRUGHXeQt44CDnZie0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

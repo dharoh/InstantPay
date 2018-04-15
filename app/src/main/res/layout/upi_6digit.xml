@@ -1,0 +1,291 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/bname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:text="State Bank of India"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@mipmap/upi" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="20dp"
+        android:text="ENTER UPI PIN"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Upi1"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_below="@+id/textView15"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number|numberPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Upi2"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Upi1"
+        android:layout_toEndOf="@+id/Upi1"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number|numberPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Upi3"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Upi2"
+        android:layout_toEndOf="@+id/Upi2"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number|numberPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Upi4"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Upi3"
+        android:layout_toEndOf="@+id/Upi3"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number|numberPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/upi5"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Upi4"
+        android:layout_toEndOf="@+id/Upi4"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number|numberPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/upi6"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/upi5"
+        android:layout_toEndOf="@+id/upi5"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="number|numberPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Utv1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Upi1"
+        android:layout_below="@+id/Upi1"
+        android:layout_marginTop="71dp"
+        android:onClick="press1"
+        android:text="1"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Utv2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Utv1"
+        android:layout_alignBottom="@+id/Utv1"
+        android:layout_centerHorizontal="true"
+        android:onClick="press2"
+        android:text="2"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Utv3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Utv2"
+        android:layout_alignBottom="@+id/Utv2"
+        android:layout_alignStart="@+id/imageView5"
+        android:onClick="press3"
+        android:text="3"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Utv4"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Utv1"
+        android:layout_below="@+id/Utv1"
+        android:layout_marginTop="20dp"
+        android:onClick="press4"
+        android:text="4"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Utv5"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Utv4"
+        android:layout_alignBottom="@+id/Utv4"
+        android:layout_alignStart="@+id/Utv2"
+        android:onClick="press5"
+        android:text="5"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Utv6"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Utv3"
+        android:layout_alignTop="@+id/Utv5"
+        android:onClick="press6"
+        android:text="6"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Utv7"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Utv4"
+        android:layout_below="@+id/Utv4"
+        android:layout_marginTop="22dp"
+        android:onClick="press7"
+        android:text="7"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Utv8"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Utv7"
+        android:layout_alignBottom="@+id/Utv7"
+        android:layout_alignStart="@+id/Utv5"
+        android:onClick="press8"
+        android:text="8"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Utv9"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Utv6"
+        android:layout_alignTop="@+id/Utv8"
+        android:onClick="press9"
+        android:text="9"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Utv0"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Utv8"
+        android:layout_below="@+id/Utv8"
+        android:layout_marginTop="28dp"
+        android:onClick="press0"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/Ub"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Utv0"
+        android:layout_alignStart="@+id/Utv7"
+        android:onClick="backspace"
+        app:srcCompat="@mipmap/backspace" />
+
+    <ImageView
+        android:id="@+id/uo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Utv9"
+        android:layout_alignTop="@+id/Ub"
+        android:onClick="next"
+        app:srcCompat="@mipmap/ok" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Utv1"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginStart="13dp"
+        android:onClick="Show"
+        app:srcCompat="@mipmap/eye1" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bname"
+        android:layout_below="@+id/Upi1"
+        android:layout_marginTop="18dp"
+        android:onClick="forgetUpi"
+        android:text="Forget UPI ?"
+        android:textColor="@android:color/holo_blue_light" />
+
+
+</RelativeLayout>
